@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loginAction, logoutAction } from '../redux/features/loginSlice';
 
 const LoginComponent = () => {
-  // const count = useSelector((state) => state.counter.value);
+  const renk = useSelector((state) => state.themeReducer.value);
+
+  console.log(renk, " login componenti")
   const dispatch = useDispatch();
 
   const loginClick = () => {
@@ -15,8 +17,8 @@ const logoutClick =()=>{
  
 
   return (
-    <div>
-      <h1>Burası login componentidir.</h1>
+    <div style={{color:renk}} >
+      <h1>LoginComponent.</h1>
       <button onClick={loginClick}>Login</button>
       <button onClick={logoutClick}>Logout</button>
     </div>

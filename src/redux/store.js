@@ -2,11 +2,13 @@ import React from 'react'
 
 import { configureStore,combineReducers } from '@reduxjs/toolkit'
 import {loginReducer} from "./features/loginSlice"
+import { themeReducer } from './features/ThemeeSlice'
 
 
 
 const rootReducer = combineReducers({
-  loginReducer
+  loginReducer,
+  themeReducer
 })
 
 
