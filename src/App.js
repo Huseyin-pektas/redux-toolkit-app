@@ -4,6 +4,7 @@ import LoginComponent from "./components/loginComponent";
 import ProfileComponent from "./components/ProfileComponent";
 import ThemeComponent from "./components/ThemeComponent";
 import CounterComponent from "./components/CounterComponent";
+import TodoComponnent from "./components/todo/TodoComponnent";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <ThemeComponent/>
       <hr/>
       <CounterComponent/>
+      <hr/>
+      <TodoComponnent/>
     </div>
   );
 }

@@ -4,12 +4,13 @@ import { configureStore,combineReducers } from '@reduxjs/toolkit'
 import {loginReducer} from "./features/loginSlice"
 import { themeReducer } from './features/ThemeeSlice'
 import counterReducer from './features/counterSlice'
-
+import todosReducer from "./features/todoSlice"
 
 const rootReducer = combineReducers({
   loginReducer,
   themeReducer,
-  counterReducer
+  counterReducer,
+  todosReducer
 })
 
 
