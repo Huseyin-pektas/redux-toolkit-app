@@ -3,6 +3,7 @@ import React from "react";
 import LoginComponent from "./components/loginComponent";
 import ProfileComponent from "./components/ProfileComponent";
 import ThemeComponent from "./components/ThemeComponent";
+import CounterComponent from "./components/CounterComponent";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <ProfileComponent/>
       <hr/>
       <ThemeComponent/>
+      <hr/>
+      <CounterComponent/>
     </div>
   );
 }
